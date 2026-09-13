@@ -1,7 +1,5 @@
 # Hot Take
 
-One screen. One opinion. Yours.
-
 A Hot Take is deliberately small: one headline, one argument, one thing you
 think that other people might not. It is not the big project — that is Top 6,
 and it comes later. This is where you make the mistakes first, on a page small
@@ -12,26 +10,33 @@ what you do to it, which means you learn nothing from it.
 
 ## What is already done, and what is not
 
-**Wired for you:** the doctype, the meta tags, Tailwind, daisyUI, and a
-stylesheet of your own that loads last so it wins ties. You install nothing.
+**Wired for you:** the doctype, the meta tags, Tailwind, daisyUI, a stylesheet
+of your own that loads last so it wins ties, and a `.vscode` folder that tells
+your editor which two extensions this project expects. You install nothing by
+hand.
 
-**Not done:** the page. You build it in class, together, in four stages. That is
+**Not done:** the page. You build it in class, together, in six stages. That is
 the point — this starter is nearly empty on purpose.
 
 ## Start here
 
-1. Open `index.html` with **Live Server**. Not by double-clicking — see Unit 4
-   for why `file://` is not a website.
-2. You should see an unstyled heading and one line of text. That is correct.
+1. When VS Code asks whether to install this workspace's recommended
+   extensions, say yes. They are **Live Server**, which runs the page, and
+   **Live Share**, which is how you show it to your teacher when it misbehaves
+   — click **Live Share** in the status bar, paste the link it copies into
+   Google Chat, and keep working. You do not need a reply.
+2. Open `index.html` with **Live Server** — the **Go Live** button in the status
+   bar. Not by double-clicking; see Unit 4 for why `file://` is not a website.
+3. You should see an unstyled heading and one line of text. That is correct.
    It means the wiring works and the design has not started.
-3. Change `data-theme="nord"` on the `<html>` tag to something else. Five
+4. Change `data-theme="nord"` on the `<html>` tag to something else. Five
    seconds, and it is the fastest way to find the mood you want. Try
    `synthwave`, `forest`, `cupcake`, `dracula`, `retro`, `autumn`, `lofi`,
    `night`.
-4. Commit as you go. Push at least once a session — a commit is local until you
+5. Commit as you go. Push at least once a session — a commit is local until you
    push it, and **pushed is submitted**.
 
-## The four stages
+## The six stages
 
 Each one is marked with a comment in `index.html`, in order.
 
@@ -41,6 +46,8 @@ Each one is marked with a comment in `index.html`, in order.
 | Two | Container → row → columns. Three reasons as daisyUI cards | `WD3.2.A`, `WD3.4.A` |
 | Three | One column on a phone, three from `md:` up | `WD3.3.A`, `WD3.3.B` |
 | Four | One media query, written by hand, in `styles.css` | `WD3.3.C` |
+| Five | A hero with exactly one call to action | `WD3.4.B` |
+| Six | A footer: links grouped under `footer-title` headings, and your credits | `WD3.4.C` |
 
 Stage three **edits** stage two rather than adding to it. That is normal and it
 is worth noticing: making something responsive is usually a change to what you
@@ -61,6 +68,8 @@ have them found.
 - [ ] Exactly one `h1`, and it is the take itself.
 - [ ] The three reasons are **parallel**: same shape, same kind of content,
       similar length.
+- [ ] The footer's links sit in groups, each named by a `footer-title`
+      heading — not one flat list.
 
 ### Layout
 
@@ -77,6 +86,7 @@ have them found.
 - [ ] Your palette is recorded as a comment block at the top of `styles.css`,
       with a mood sentence and a job for each colour.
 - [ ] Two type faces at most: one for headings, one for body.
+- [ ] The hero has exactly one `btn-primary`, and its text says what it does.
 - [ ] Body text against its background is at least **4.5:1**. Check it — do not
       guess.
 
