@@ -26,7 +26,9 @@ the point — this starter is nearly empty on purpose.
    — click **Live Share** in the status bar, paste the link it copies into
    Google Chat, and keep working. You do not need a reply.
 2. Open `index.html` with **Live Server** — the **Go Live** button in the status
-   bar. Not by double-clicking; see Unit 4 for why `file://` is not a website.
+   bar. Not by double-clicking: that opens a path on your disk (`file://`),
+   not a web address, with no server behind it, and a page loaded that way
+   is not allowed to do several things a real page does.
 3. You should see an unstyled heading and one line of text. That is correct.
    It means the wiring works and the design has not started.
 4. Change `data-theme="nord"` on the `<html>` tag to something else. Five
@@ -117,3 +119,5 @@ also MIT. Both are loaded from a CDN by the three tags in `index.html`.
 Nothing in this starter is stock photography or borrowed copy, so there is
 nothing else to credit — yet. That changes the moment you add an image, and the
 footer is where the credit goes.
+
+Everything else here was written for this course, MIT licensed. See `LICENSE`.
